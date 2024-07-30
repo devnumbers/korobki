@@ -370,14 +370,16 @@
                 flex-direction: column;
 
                 .text {
-                    /*margin-bottom: 10px;*/
+                    margin-bottom: 20px;
                 }
 
                 .image {
                     height: auto;
-                    width: 147px;
+                    width: 160px;
 
-                    /*margin-left: 30vw;*/
+                   position: relative;
+                    left: 150px;
+                    top: 0;
                 }
             }
 
@@ -466,7 +468,7 @@
         .content {
 
             .item{
-                padding: 30px;
+                padding: 40px;
             }
 
             .item:nth-of-type(1) {
@@ -487,17 +489,17 @@
                 flex-direction: column;
 
                 .text {
-                    margin-right: 90px;
-                    margin-bottom: 0;
+                    margin-right: 150px;
+                    margin-bottom: 20px;
                 }
 
                 .image {
                     height: auto;
                     width: 147px;
 
-                    /*position: relative;*/
-                    /*top: 30px;*/
-                    /*left: 20px;*/
+                    position: relative;
+                    left: 200px;
+                    top: 0;
                 }
             }
 
@@ -537,6 +539,63 @@
         }
     }
 
+}
+
+@media (min-width: 580px) {
+    .description {
+        .content {
+
+            .item:nth-of-type(1) {
+                .image {
+                    position: relative;
+                    left: 250px;
+                }
+            }
+
+            .item:nth-of-type(2) {
+                .image {
+                    width: 170px;
+                    position: relative;
+                    left: 300px;
+                    top: 0;
+                }
+            }
+
+            .item:nth-of-type(3) {
+                height: 270px;
+
+                max-height: 270px;
+                flex-direction: column-reverse;
+
+                .image {
+                    height: auto;
+                    width: 175px;
+
+                    /*margin-left: 31vw;*/
+                }
+            }
+
+            .item:nth-of-type(4) {
+                height: 270px;
+
+                max-height: 270px;
+                flex-direction: column-reverse;
+
+                .image {
+                    height: 178px;
+                    width: 268px;
+
+                    /*position: relative;*/
+                    /*left: 27vw;*/
+                    /*top: 40px;*/
+                }
+
+                .text{
+                    /*margin-right: 50px;*/
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 767px) {
