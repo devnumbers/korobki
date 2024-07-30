@@ -412,9 +412,8 @@
                     height: 178px;
                     width: 230px;
 
-                    /*position: relative;*/
-                    /*left: 31px;*/
-                    /*top: 48px;*/
+                    position: relative;
+                    left: 140px;
                 }
 
                 .text{
@@ -547,13 +546,12 @@
                     height: 178px;
                     width: 268px;
 
-                    /*position: relative;*/
-                    /*left: 27vw;*/
-                    /*top: 40px;*/
+                    position: relative;
+                    left: 150px;
                 }
 
                 .text{
-                    /*margin-right: 50px;*/
+                    margin-right: 70px;
                 }
             }
         }
@@ -601,9 +599,8 @@
                     height: 178px;
                     width: 268px;
 
-                    /*position: relative;*/
-                    /*left: 27vw;*/
-                    /*top: 40px;*/
+                    position: relative;
+                    left: 228px;
                 }
 
                 .text{
