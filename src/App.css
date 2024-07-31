@@ -456,6 +456,8 @@
 
         padding: 16px 0;
         width: 100%;
+
+        cursor: pointer;
     }
 
     .modal .footer:hover {
@@ -488,6 +490,10 @@
             padding: 16px 20px;
         }
 
+        .input.error{
+            border: 1px solid red;
+        }
+
         .input::placeholder {
             color: var(--color-gray-1);
         }
@@ -503,6 +509,14 @@
         }
 
     }
+}
+
+.container-n{
+    border-radius: 30px;
+}
+
+.b{
+    background-color: var(--color-yellow-1);
 }
 
 @media (min-width: 359px) {
