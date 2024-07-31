@@ -490,7 +490,7 @@
             padding: 16px 20px;
         }
 
-        .input.error{
+        .input.error {
             border: 1px solid red;
         }
 
@@ -510,7 +510,7 @@
 
     }
 
-    .success{
+    .success {
         height: 300px;
         display: flex;
         flex-direction: column;
@@ -518,7 +518,7 @@
     }
 }
 
-.modal-wrapper-s{
+.modal-wrapper-s {
     display: flex;
     position: fixed;
     justify-content: center;
@@ -532,7 +532,7 @@
     width: 100%;
     min-height: 100vh;
 
-    .modal-s{
+    .modal-s {
         z-index: 100;
 
         position: relative;
@@ -555,10 +555,11 @@
         align-items: center;
         justify-content: space-around;
 
-        .title{
+        .title {
             text-align: center;
         }
-        .footer{
+
+        .footer {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -573,18 +574,80 @@
             transition: all .3s;
         }
 
-        .footer:active{
+        .footer:active {
             background-color: var(--color-yellow-1);
         }
     }
 }
 
-.container-n{
-    border-radius: 30px;
+.stay {
+    margin-top: 120px;
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            background-color: var(--color-yellow-1);
+
+            border-radius: 20px;
+
+            width: calc(50% - 10px);
+            height: revert;
+
+            padding: 20px 20px 0;
+
+            box-sizing: border-box;
+
+            overflow: hidden;
+
+            .image {
+                max-width: 100%;
+                height: auto;
+
+                position: relative;
+                top: 30px;
+            }
+
+            .text {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
 }
 
-.b{
-    background-color: var(--color-yellow-1);
+.reviews {
+    margin-top: 120px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        .block {
+            box-sizing: border-box;
+            padding: 30px;
+
+            text-align: left;
+
+            color: var(--color-black);
+            background-color: var(--color-yellow-3);
+
+            border-radius: 20px;
+
+            .name {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 @media (min-width: 359px) {
@@ -1103,21 +1166,47 @@
             }
         }
     }
-.modal-wrapper{
-    .modal{
-        width: 600px;
 
-        padding: 50px;
+    .modal-wrapper {
+        .modal {
+            width: 600px;
 
-        .desc{
-            margin-top: 20px;
+            padding: 50px;
 
-            margin-bottom: 30px;
+            .desc {
+                margin-top: 20px;
 
-            font-size: 16px;
+                margin-bottom: 30px;
+
+                font-size: 16px;
+            }
         }
     }
-}
+
+    .reviews{
+        .content{
+            gap: 30px;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .block:nth-of-type(1) {
+                width: calc(50% - 15px);
+            }
+            .block:nth-of-type(2) {
+                width: calc(50% - 15px);
+            }
+            .block:nth-of-type(3) {
+                width: calc(50% - 15px);
+            }
+            .block:nth-of-type(4) {
+                width: calc(50% - 15px);
+            }
+
+            .block:nth-of-type(5) {
+                width: 100%;
+            }
+        }
+    }
 
 }
 
@@ -1252,6 +1341,27 @@
                         font-size: 24px !important;
                     }
                 }
+            }
+        }
+    }
+
+    .reviews{
+        .content{
+
+            .block:nth-of-type(1) {
+                width: calc(32% - 15px);
+            }
+            .block:nth-of-type(2) {
+                width: calc(32% - 15px);
+            }
+            .block:nth-of-type(3) {
+                width: calc(32% - 15px);
+            }
+            .block:nth-of-type(4) {
+                width: calc(50% - 15px);
+            }
+            .block:nth-of-type(5) {
+                width: calc(50% - 15px);
             }
         }
     }
