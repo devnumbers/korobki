@@ -4,6 +4,7 @@ import {Description} from "./Components/Description/Description.jsx";
 import {Choice} from "./Components/Choice/Choice.jsx";
 import {Stay} from "./Components/Stay/Stay.jsx";
 import {Reviews} from "./Components/Reviews/Reviews.jsx";
+import {QA} from "./Components/QA/QA.jsx";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
             <Choice/>
             <Stay/>
             <Reviews/>
+            <QA/>
         </>
     )
 }
