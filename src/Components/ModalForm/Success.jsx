@@ -16,10 +16,11 @@ export const SuccessModal = ({ show, onClose }) => {
     };
 
     return ReactDOM.createPortal(
-        <div className="modal-wrapper" onClick={handleOverlayClick}>
-            <div className="modal" onClick={handleModalClick}>
+        <div className="modal-wrapper-s" onClick={handleOverlayClick}>
+            <div className="modal-s" onClick={handleModalClick}>
                 <div className="title regular_h3">
-                    Заявка отправлена
+                    Заявка<br/>
+                    отправлена
                 </div>
                 <div className="footer" onClick={onClose}>
                     <div className="button regular_h4" >
