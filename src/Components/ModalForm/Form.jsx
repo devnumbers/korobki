@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
-export const Form = ({show, onCloseButtonClick, size}) => {
+export const Form = ({ show, onCloseButtonClick, size, onSuccess }) => {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [duration, setDuration] = useState('');
@@ -39,8 +39,9 @@ export const Form = ({show, onCloseButtonClick, size}) => {
         setErrors(newErrors);
 
         if (!newErrors.name && !newErrors.phone && !newErrors.duration) {
-            console.log({name, phone, duration});
-
+            console.log({ name, phone, duration });
+            onCloseButtonClick();
+            onSuccess();
         }
     };
 

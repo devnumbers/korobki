@@ -21,8 +21,8 @@ export const SuccessModal = ({ show, onClose }) => {
                 <div className="title regular_h3">
                     Заявка отправлена
                 </div>
-                <div className="footer">
-                    <div className="button regular_h4" onClick={onClose}>
+                <div className="footer" onClick={onClose}>
+                    <div className="button regular_h4" >
                         Закрыть
                     </div>
                 </div>

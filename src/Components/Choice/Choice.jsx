@@ -1,19 +1,30 @@
-import {Form} from "../ModalForm/Form.jsx";
-import {useModal} from "../ModalForm/useModal.jsx";
-import {useState} from "react";
+import React, { useState } from 'react';
+import { Form } from "../ModalForm/Form.jsx";
+import { useModal } from "../ModalForm/useModal.jsx";
+import { SuccessModal } from '../ModalForm/Success.jsx';
 
 export const Choice = () => {
     const [isShowingModal, toggleModal] = useModal();
     const [selectedSize, setSelectedSize] = useState('');
+    const [isSuccessModalVisible, setSuccessModalVisible] = useState(false);
 
     const handleRentClick = (size) => {
         setSelectedSize(size);
         toggleModal();
     };
 
+    const handleSuccess = () => {
+        setSuccessModalVisible(true);
+    };
+
+    const handleCloseSuccessModal = () => {
+        setSuccessModalVisible(false);
+    };
+
     return (
         <>
-            <Form show={isShowingModal} onCloseButtonClick={toggleModal} size={selectedSize}/>
+            <Form show={isShowingModal} onCloseButtonClick={toggleModal} size={selectedSize} onSuccess={handleSuccess} />
+            <SuccessModal show={isSuccessModalVisible} onClose={handleCloseSuccessModal} />
 
             <div className={'container-page choice'}>
                 <div className="title regular_h1">
@@ -65,7 +76,7 @@ export const Choice = () => {
                                 <div>7, 5 м²</div>
                                 <div>8 000 ₽ в месяц</div>
                             </div>
-                            <div className="button regular_h5"  onClick={() => handleRentClick('m')}>
+                            <div className="button regular_h5" onClick={() => handleRentClick('m')}>
                                 <div>Арендовать бокс</div>
                             </div>
                         </div>
@@ -98,5 +109,5 @@ export const Choice = () => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
