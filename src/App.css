@@ -832,6 +832,9 @@
     margin-top: 80px;
 
     .content{
+        display: flex;
+        flex-direction: column;
+
         background-color: var(--color-yellow-1);
 
         border-top-left-radius: 30px;
@@ -1251,6 +1254,18 @@
         }
     }
 
+    .footer{
+        .content{
+            padding: 40px;
+            .reference{
+                flex-direction: row;
+                 gap: 0;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+        }
+    }
+
 }
 
 @media (min-width: 580px) {
@@ -1540,6 +1555,41 @@
         }
     }
 
+    .footer{
+        .content{
+            padding: 50px;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .body{
+                .desc{
+                    align-items: flex-end;
+                }
+
+                .text{
+                    align-items: flex-end;
+
+                    .item{
+                        align-items: flex-end;
+                    }
+                }
+            }
+
+            .reference{
+                flex-direction: row-reverse;
+
+                .text{
+                    align-items: flex-end;
+                }
+
+                .copyright{
+                    position: relative;
+                    right: 283px;
+                }
+            }
+        }
+    }
+
 }
 
 @media (min-width: 959px) {
@@ -1704,6 +1754,46 @@
             margin: 0 155px;
         }
     }
+
+    .footer{
+        .content{
+            .pc{
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            .body{
+                margin-bottom: 0;
+                gap: 104px;
+
+                .text{
+                    .item{
+                        text-align: right;
+                    }
+                }
+            }
+
+            .reference{
+                position: relative;
+                right: 117px;
+
+                .text{
+
+                    .item{
+                        width: 100%;
+                        text-align: left;
+
+                        text-wrap: nowrap;
+                    }
+                }
+
+                .copyright{
+                    right: 113px;
+                    text-wrap: nowrap;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1280px) {
@@ -1835,5 +1925,22 @@
 
     .cart-max{
         display: none;
+    }
+
+    .footer{
+        .content{
+            .body{
+                gap: 80px;
+            }
+
+            .reference{
+                position: relative;
+                right: 232px;
+
+                .copyright{
+                    right: 216px;
+                }
+            }
+        }
     }
 }
