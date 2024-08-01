@@ -1,4 +1,5 @@
 import logo from '../../assets/images/footer/logo2.png'
+import {BtnBox} from "../BtnBox/BtnBox.jsx";
 
 
 export const Footer = () => {
@@ -11,11 +12,13 @@ export const Footer = () => {
                 <div className="title">
                     <div className="logo">
                         <img src={logo} className={'icon'} alt="logo"/>
+
                         <div className="text regular_h1">GetBox</div>
                     </div>
-                    <div className="button regular_h4">
-                        <div>Посмотреть боксы</div>
-                    </div>
+                    <BtnBox/>
+                    {/*<div className="button regular_h4">*/}
+                    {/*    <div>Посмотреть боксы</div>*/}
+                    {/*</div>*/}
                 </div>
                 <div className={'pc'}>
                     <div className="body">
