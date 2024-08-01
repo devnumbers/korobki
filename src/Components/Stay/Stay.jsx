@@ -13,30 +13,16 @@ export const Stay = () => {
                 Когда оставляют вещи?
             </div>
             <div className="content">
-                <div className="item">
-                    <div className="text regular_h4">1</div>
-                    <img src={repair} className={'image'} alt={'image'}/>
-                </div>
-                <div className="item">
-                    <div className="text regular_h4">1</div>
-                    <img src={relocation} className={'image'} alt={'image'}/>
-                </div>
-                <div className="item">
-                    <div className="text regular_h4">1</div>
-                    <img src={season} className={'image'} alt={'image'}/>
-                </div>
-                <div className="item">
-                    <div className="text regular_h4">1</div>
-                    <img src={business} className={'image'} alt={'image'}/>
-                </div>
-                <div className="item">
-                    <div className="text regular_h4">1</div>
-                    <img src={outside} className={'image'} alt={'image'}/>
-                </div>
-                <div className="item">
-                    <div className="text regular_h4">1</div>
-                    <img src={things} className={'image'} alt={'image'}/>
-                </div>
+                    <img src={repair} alt={'repair'} className='item'/>
+                    <img src={relocation} alt={'repair'} className='item'/>
+
+                    <img src={season} alt={'repair'} className='item'/>
+
+                    <img src={business} alt={'repair'} className='item'/>
+
+                    <img src={outside} alt={'repair'} className='item'/>
+
+                    <img src={things} alt={'repair'} className='item'/>
             </div>
         </div>
     )

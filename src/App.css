@@ -584,41 +584,13 @@
     margin-top: 120px;
 
     .content {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
 
         .item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-
-            background-color: var(--color-yellow-1);
-
-            border-radius: 20px;
-
-            width: calc(50% - 10px);
-            height: revert;
-
-            padding: 20px 20px 0;
-
-            box-sizing: border-box;
-
-            overflow: hidden;
-
-            .image {
-                max-width: 100%;
-                height: auto;
-
-                position: relative;
-                top: 30px;
-            }
-
-            .text {
-                width: 100%;
-                text-align: left;
-            }
+            position: relative;
+            width: 100%;
         }
     }
 }
@@ -1587,6 +1559,14 @@
                     right: 283px;
                 }
             }
+        }
+    }
+
+    .stay {
+
+        .content {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
         }
     }
 
