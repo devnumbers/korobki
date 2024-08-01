@@ -828,6 +828,121 @@
     }
 }
 
+.footer{
+    margin-top: 80px;
+
+    .content{
+        background-color: var(--color-yellow-1);
+
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+
+        padding: 40px 30px 30px;
+
+        .title{
+            margin-bottom: 50px;
+
+            .logo{
+                margin-bottom: 30px;
+
+                cursor: pointer;
+                display: flex;
+
+                .icon{
+                    width: 57px;
+                    height: 57px;
+                }
+
+                .text{
+
+                    font-size: 48px;
+                    color: var(--color-black);
+                    font-weight: 500;
+
+                    margin-left: 8px;
+                }
+            }
+
+            .button{
+                background-color: var(--color-white);
+
+                border-radius: 100px;
+
+                padding: 16px 28px;
+                width: max-content;
+
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+
+                cursor: pointer;
+            }
+        }
+
+        .body{
+            margin-bottom: 50px;
+
+            display: flex;
+            flex-direction: column;
+
+            gap: 40px;
+
+            .desc{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                gap: 20px;
+            }
+
+            .text{
+                display: flex;
+                flex-direction: column;
+
+                gap: 30px;
+
+                .item{
+                    display: flex;
+                    flex-direction: column;
+
+                    gap: 10px;
+
+                    text-align: left;
+                }
+            }
+
+        }
+
+        .reference{
+            display: flex;
+            flex-direction: column;
+
+            gap: 40px;
+
+            text-align: left;
+
+            .text{
+                display: flex;
+                flex-direction: column;
+
+                gap: 30px;
+
+                .item{
+                    transition: all .3s;
+                }
+
+                .item:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            .copyright{
+                color: var(--color-gray-2);
+            }
+        }
+    }
+}
+
 @media (min-width: 359px) {
     .container-page {
         max-width: 479px;

@@ -7,6 +7,7 @@ import {Reviews} from "./Components/Reviews/Reviews.jsx";
 import {QA} from "./Components/QA/QA.jsx";
 import {Question} from "./Components/Question/Question.jsx";
 import {Cart} from "./Components/Cart/Cart.jsx";
+import {Footer} from "./Components/Footer/Footer.jsx";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <QA/>
             <Question/>
             <Cart/>
+            <Footer/>
         </>
     )
 }
