@@ -127,7 +127,7 @@ export const SL = () => {
                         <img src={images7} alt={'repair'} className='image'/>
                         <div className={'text regular_h5'}>
                             Аккумуляторы
-                            и&nbsp;оборудование, которое&nbsp;работает
+                            и&nbsp;оборудование,&nbsp;которое работает
                             от&nbsp;аккумуляторов
                         </div>
                     </div>
@@ -199,7 +199,7 @@ export const SL = () => {
                             <img src={images7} alt={'repair'} className='image'/>
                             <div className={'text regular_h5'}>
                                 Аккумуляторы
-                                и&nbsp;оборудование, которое&nbsp;работает
+                                и&nbsp;оборудование,&nbsp;которое работает
                                 от&nbsp;аккумуляторов
                             </div>
                         </div>
