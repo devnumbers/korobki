@@ -697,6 +697,14 @@
             .slick-prev:before, .slick-next:before {
                 content: none;
             }
+
+            .slick-next{
+                background-image: url("./assets/images/slider/arrowr.png");
+            }
+
+            .slick-prev{
+                background-image: url("./assets/images/slider/arrow.png");
+            }
         }
     }
 }

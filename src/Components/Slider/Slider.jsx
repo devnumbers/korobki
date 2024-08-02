@@ -20,7 +20,6 @@ function SampleNextArrow(props) {
             style={{
                 ...style,
                 display: "block",
-                backgroundImage: `url("./../src/assets/images/slider/arrowr.png")`,
                 backgroundSize: "40px 40px",
                 top:"310px",
                 right: "300px",
@@ -40,7 +39,6 @@ function SamplePrevArrow(props) {
             style={{
                 ...style,
                 display: "block",
-                backgroundImage: `url("./../src/assets/images/slider/arrow.png")`,
                 backgroundSize: "40px 40px",
                 top:"310px",
                 left: "300px",
