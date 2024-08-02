@@ -606,12 +606,12 @@
         display: none;
     }
 
-    .content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    .mobile{
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
 
-        .mobile {
             .block {
                 position: relative;
                 width: 100%;
@@ -625,11 +625,12 @@
                 }
             }
         }
-
     }
+
 
     .slider-container {
         .block {
+            width: 216px;
             margin: 0 auto;
 
             .image {
