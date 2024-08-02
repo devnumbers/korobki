@@ -90,6 +90,11 @@
     justify-content: center;
 
     transition: all .3s;
+
+    a{
+        color: var(--color-black);
+        text-decoration: none;
+    }
 }
 
 .btn-box:hover {
