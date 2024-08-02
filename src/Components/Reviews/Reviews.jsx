@@ -2,7 +2,7 @@ export const Reviews = () => {
 
 
     return (
-        <div className={'container-page reviews'}>
+        <div className={'container-page reviews'} id={'reviews'}>
             <div className={'title regular_h2'}>
                 Отзывы
             </div>

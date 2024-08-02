@@ -61,7 +61,7 @@ export const QA = () => {
     };
 
     return (
-        <div className="container-page qa" id={'faq'}>
+        <div className="container-page qa" id={'qa'}>
             <div className="title regular_h2">
                 Частые вопросы
             </div>

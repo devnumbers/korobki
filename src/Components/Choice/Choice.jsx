@@ -26,7 +26,7 @@ export const Choice = () => {
             <Form show={isShowingModal} onCloseButtonClick={toggleModal} size={selectedSize} onSuccess={handleSuccess} />
             <SuccessModal show={isSuccessModalVisible} onClose={handleCloseSuccessModal} />
 
-            <div className={'container-page choice'}>
+            <div className={'container-page choice'} id={'box'}>
                 <div className="title regular_h1">
                     Выберите бокс
                 </div>

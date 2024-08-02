@@ -42,7 +42,7 @@ export const Question = () => {
         <>
             <SuccessModal show={isSuccessModalVisible} onClose={handleCloseSuccessModal}/>
 
-            <div className={'container-page question'}>
+            <div className={'container-page question'} id={'question'}>
                 <div className={'content'}>
                     <div className={'title regular_h2'}>
                         Остались вопросы?
