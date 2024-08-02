@@ -9,6 +9,7 @@ import images8 from '../../assets/images/slider/images8.png'
 import images9 from '../../assets/images/slider/images9.png'
 import images10 from '../../assets/images/slider/images10.png'
 
+
 import Slider from "react-slick";
 
 function SampleNextArrow(props) {
@@ -19,8 +20,12 @@ function SampleNextArrow(props) {
             style={{
                 ...style,
                 display: "block",
-                background: "red",
-                // position: "relative",
+                backgroundImage: `url("./../src/assets/images/slider/arrowr.png")`,
+                backgroundSize: "40px 40px",
+                top:"310px",
+                right: "300px",
+                width: "40px",
+                height: "40px",
             }}
             onClick={onClick}
         />
@@ -35,9 +40,12 @@ function SamplePrevArrow(props) {
             style={{
                 ...style,
                 display: "block",
-                background: "green",
-                // position: "relative",
-                // top: "320px",
+                backgroundImage: `url("./../src/assets/images/slider/arrow.png")`,
+                backgroundSize: "40px 40px",
+                top:"310px",
+                left: "300px",
+                width: "40px",
+                height: "40px",
             }}
             onClick={onClick}
         />
@@ -47,13 +55,28 @@ function SamplePrevArrow(props) {
 export const SL = () => {
 
     const settings = {
-        // dots: true,
         infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 6,
+        slidesToScroll: 6,
         nextArrow: <SampleNextArrow/>,
-        prevArrow: <SamplePrevArrow/>
+        prevArrow: <SamplePrevArrow/>,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+        ]
     };
 
     return (
@@ -72,19 +95,22 @@ export const SL = () => {
                     <div className={'block'}>
                         <img src={images2} alt={'repair'} className='image'/>
                         <div className={'text regular_h5'}>
-                            Животные, растения, грунт, семена, корма
+                            Лакокрасочные
+                            материалы
                         </div>
                     </div>
                     <div className={'block'}>
                         <img src={images3} alt={'repair'} className='image'/>
                         <div className={'text regular_h5'}>
-                            Животные, растения, грунт, семена, корма
+                            Взрывоопасные
+                            и огнеопасные вещества
                         </div>
                     </div>
                     <div className={'block'}>
                         <img src={images4} alt={'repair'} className='image'/>
                         <div className={'text regular_h5'}>
-                            Животные, растения, грунт, семена, корма
+                            Радиоактивные
+                            или токсичные вещества
                         </div>
                     </div>
                     <div className={'block'}>
@@ -103,8 +129,8 @@ export const SL = () => {
                         <img src={images7} alt={'repair'} className='image'/>
                         <div className={'text regular_h5'}>
                             Аккумуляторы
-                            и&nbsp;оборудование, которое работает
-                            от аккумуляторов
+                            и&nbsp;оборудование, которое&nbsp;работает
+                            от&nbsp;аккумуляторов
                         </div>
                     </div>
                     <div className={'block'}>
@@ -132,30 +158,31 @@ export const SL = () => {
             <div className="pc">
                 <div className="slider-container">
                     <Slider {...settings}>
-                        <div>
-                            <div className={'block'}>
-                                <img src={images1} alt={'repair'} className='image'/>
-                                <div className={'text regular_h5'}>
-                                    Животные, растения, грунт, семена, корма
-                                </div>
+                        <div className={'block'}>
+                            <img src={images1} alt={'repair'} className='image'/>
+                            <div className={'text regular_h5'}>
+                                Животные, растения, грунт, семена, корма
                             </div>
                         </div>
                         <div className={'block'}>
                             <img src={images2} alt={'repair'} className='image'/>
                             <div className={'text regular_h5'}>
-                                Животные, растения, грунт, семена, корма
+                                Лакокрасочные
+                                материалы
                             </div>
                         </div>
                         <div className={'block'}>
                             <img src={images3} alt={'repair'} className='image'/>
                             <div className={'text regular_h5'}>
-                                Животные, растения, грунт, семена, корма
+                                Взрывоопасные
+                                и огнеопасные вещества
                             </div>
                         </div>
                         <div className={'block'}>
                             <img src={images4} alt={'repair'} className='image'/>
                             <div className={'text regular_h5'}>
-                                Животные, растения, грунт, семена, корма
+                                Радиоактивные
+                                или токсичные вещества
                             </div>
                         </div>
                         <div className={'block'}>
@@ -174,8 +201,8 @@ export const SL = () => {
                             <img src={images7} alt={'repair'} className='image'/>
                             <div className={'text regular_h5'}>
                                 Аккумуляторы
-                                и&nbsp;оборудование, которое работает
-                                от аккумуляторов
+                                и&nbsp;оборудование, которое&nbsp;работает
+                                от&nbsp;аккумуляторов
                             </div>
                         </div>
                         <div className={'block'}>

@@ -606,7 +606,7 @@
         display: none;
     }
 
-    .mobile{
+    .mobile {
         .content {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -621,25 +621,33 @@
                 }
 
                 .text {
+                    margin-top: 10px;
                     text-align: left;
                 }
             }
         }
     }
 
+    .pc {
+        .slider-container {
+            .block {
+                display: flex!important;
+                align-items: center;
+                flex-direction: column;
 
-    .slider-container {
-        .block {
-            width: 216px;
-            margin: 0 auto;
+                .image {
+                    width: 216px;
+                }
 
-            .image {
-                width: 216px;
+                .text {
+                    margin-top: 10px;
+                    width: 216px;
+                    text-align: left;
+                }
             }
 
-            .text {
-                width: 216px;
-                text-align: left;
+            .slick-prev:before, .slick-next:before {
+                content: none;
             }
         }
     }
@@ -1859,6 +1867,33 @@
             }
         }
     }
+
+    .slider {
+
+        .pc {
+            .slider-container {
+                .block {
+
+                    .image {
+                        width: 202px;
+                    }
+
+                    .text {
+                        margin-top: 10px;
+                        width: 202px;
+                        text-align: left;
+                    }
+                }
+
+                .slick-prev{
+                    left: 390px!important;
+                }
+                .slick-next{
+                    right: 390px!important;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1280px) {
@@ -2004,6 +2039,33 @@
 
                 .copyright {
                     right: 216px;
+                }
+            }
+        }
+    }
+
+    .slider {
+
+        .pc {
+            .slider-container {
+                .block {
+
+                    .image {
+                        width: 170px;
+                    }
+
+                    .text {
+                        margin-top: 10px;
+                        width: 170px;
+                        text-align: left;
+                    }
+                }
+
+                .slick-prev{
+                    left: 530px!important;
+                }
+                .slick-next{
+                    right: 530px!important;
                 }
             }
         }
