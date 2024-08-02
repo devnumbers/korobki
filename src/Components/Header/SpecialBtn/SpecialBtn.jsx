@@ -1,9 +1,10 @@
+import {forwardRef} from "react";
 
 
-export const SpecialBtn = () => {
+export const SpecialBtn = forwardRef(({text,}, ref) => {
     return(
         <div className={'special-btn regular_h5'} >
-            Арендовать
+            <a href={'#box'}>Арендовать</a>
         </div>
     )
-}
+})
