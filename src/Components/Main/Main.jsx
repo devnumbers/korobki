@@ -1,14 +1,12 @@
 import yandex from '../../assets/images/yandex.png';
 
 
-import {Header} from "../Header/Header.jsx";
 import {BtnBox} from "../BtnBox/BtnBox.jsx";
 
 export const Main = () => {
     return (
         <div className="main">
             <div className="container-page">
-                <Header/>
                 <div className="content">
                     <div className="text regular_h2">
                         Аренда боксов<br/>

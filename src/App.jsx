@@ -9,11 +9,13 @@ import {Question} from "./Components/Question/Question.jsx";
 import {Cart} from "./Components/Cart/Cart.jsx";
 import {Footer} from "./Components/Footer/Footer.jsx";
 import {SL} from "./Components/Slider/Slider.jsx";
+import {Header} from "./Components/Header/Header.jsx";
 
 function App() {
 
     return (
         <>
+            <Header/>
             <Main/>
             <Description/>
             <Choice/>

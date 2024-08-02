@@ -6,6 +6,9 @@
     height: 700px;
     width: 100%;
 
+    position: relative;
+    top: -50px;
+
     padding-top: 20px;
 
     background-color: var(--color-yellow-1);
@@ -168,6 +171,11 @@
 .mobile-header {
     display: block;
 
+    position: sticky;
+    z-index: 10000;
+    top: 20px;
+
+    padding: 0 20px;
 
     .burger {
 
@@ -631,7 +639,7 @@
     .pc {
         .slider-container {
             .block {
-                display: flex!important;
+                display: flex !important;
                 align-items: center;
                 flex-direction: column;
 
@@ -1020,6 +1028,7 @@
     }
 
     .description {
+        margin-top: 0px;
 
         .content {
             .items {
@@ -1176,6 +1185,8 @@
     }
 
     .description {
+        margin-top: 40px;
+
         .content {
 
             .item {
@@ -1373,6 +1384,14 @@
         max-width: 768px;
 
         padding: 0 30px;
+    }
+
+    .mobile-header {
+        box-sizing: border-box;
+        max-width: 768px;
+        padding: 0 30px;
+
+        margin: 0 auto;
     }
 
     .main {
@@ -1673,6 +1692,10 @@
         max-width: 960px;
     }
 
+    .mobile-header {
+        max-width: 960px;
+    }
+
     .header {
         .buttons {
             display: flex;
@@ -1808,7 +1831,7 @@
             }
 
             .block:nth-of-type(3) {
-                width: calc(33% - 15px);
+                width: calc(33% - 12px);
             }
 
             .block:nth-of-type(4) {
@@ -1885,11 +1908,12 @@
                     }
                 }
 
-                .slick-prev{
-                    left: 390px!important;
+                .slick-prev {
+                    left: 390px !important;
                 }
-                .slick-next{
-                    right: 390px!important;
+
+                .slick-next {
+                    right: 390px !important;
                 }
             }
         }
@@ -1898,6 +1922,11 @@
 
 @media (min-width: 1280px) {
     .container-page {
+        max-width: 1280px;
+        padding: 0 55px;
+    }
+
+    .mobile-header {
         max-width: 1280px;
         padding: 0 55px;
     }
@@ -2061,12 +2090,21 @@
                     }
                 }
 
-                .slick-prev{
-                    left: 530px!important;
+                .slick-prev {
+                    left: 530px !important;
                 }
-                .slick-next{
-                    right: 530px!important;
+
+                .slick-next {
+                    right: 530px !important;
                 }
+            }
+        }
+    }
+
+    .reviews {
+        .content {
+            .block:nth-of-type(3) {
+                width: calc(33% - 7px);
             }
         }
     }
