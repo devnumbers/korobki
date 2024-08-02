@@ -80,7 +80,7 @@ export const SL = () => {
     };
 
     return (
-        <div className="container-page slider">
+        <div className="container-page slider" id={'not'}>
             <div className="title regular_h2">
                 Что нельзя хранить на складе?
             </div>
