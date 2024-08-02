@@ -26,7 +26,7 @@ export const Footer = () => {
                     <div className="body">
                         <div className="desc regular_h3">
                             <div>+7 (992) 402-52-32</div>
-                            <div>faq@getbox.com</div>
+                            <div>hello@getboxx.ru</div>
                         </div>
                         <div className="text">
                             <div className={'item'}>

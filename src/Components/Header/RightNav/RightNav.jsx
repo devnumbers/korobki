@@ -12,7 +12,7 @@ export const RightNav = forwardRef(({open, setOpen}, ref) => {
             <Logo/>
             <div className={'desc'}>
                 <div className={'text regular_h5'}>+7 (992) 402-52-32</div>
-                <div className={'text regular_h5'}>faq@getbox.com</div>
+                <div className={'text regular_h5'}>hello@getboxx.ru</div>
                 <div className={'text regular_h5'}>улица Ягодина, 50/1</div>
             </div>
             <div className={'content'}>
