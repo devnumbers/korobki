@@ -1,4 +1,6 @@
-import './App.css'
+import './App.css';
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import {useEffect} from 'react';
 import {Main} from "./Components/Main/Main.jsx";
 import {Description} from "./Components/Description/Description.jsx";
 import {Choice} from "./Components/Choice/Choice.jsx";
@@ -12,7 +14,18 @@ import {SL} from "./Components/Slider/Slider.jsx";
 import {Header} from "./Components/Header/Header.jsx";
 
 function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<AppContent/>}/>
+                <Route path="/initialize" element={<Initialize/>}/>
+                <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
+        </Router>
+    );
+}
 
+function AppContent() {
     return (
         <>
             <Header/>
@@ -27,7 +40,23 @@ function App() {
             <Cart/>
             <Footer/>
         </>
-    )
+    );
 }
 
-export default App
+function Initialize() {
+    useEffect(() => {
+        fetch('http://your-server-url/initialize', {
+            method: 'POST',
+        }).then(() => {
+            window.location.href = '/';
+        });
+    }, []);
+
+    return (
+        <div>
+            <p>Initializing...</p>
+        </div>
+    );
+}
+
+export default App;

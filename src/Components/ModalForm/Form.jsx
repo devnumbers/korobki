@@ -61,6 +61,7 @@ export const Form = ({ show, onCloseButtonClick, size, onSuccess }) => {
                 <div className="body">
                     <input
                         type="text"
+                        name="name"
                         className={`input regular_h4 ${errors.name ? 'error' : ''}`}
                         placeholder="Имя"
                         value={name}
