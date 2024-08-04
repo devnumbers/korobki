@@ -12,6 +12,7 @@ import {Cart} from "./Components/Cart/Cart.jsx";
 import {Footer} from "./Components/Footer/Footer.jsx";
 import {SL} from "./Components/Slider/Slider.jsx";
 import {Header} from "./Components/Header/Header.jsx";
+import axios from "axios";
 
 function App() {
     return (
@@ -44,17 +45,23 @@ function AppContent() {
 }
 
 function Initialize() {
+
+    const baseUrl = "http://localhost:8000/form"
+
     useEffect(() => {
-        fetch('http://your-server-url/initialize', {
-            method: 'POST',
-        }).then(() => {
+        axios
+            .post(baseUrl, {
+                title: "Hello World!",
+                body: "This is a new post about Timeweb Cloud."
+            }).then(r => {
+            console.log(r.data.message)
             window.location.href = '/';
-        });
+        })
     }, []);
 
     return (
         <div>
-            <p>Initializing...</p>
+            <p>Отправка формы...</p>
         </div>
     );
 }
