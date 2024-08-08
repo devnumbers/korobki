@@ -66,7 +66,7 @@ export const Question = () => {
                         />
                         <textarea
                             className={`input regular_h4 ${errors.duration ? 'error' : ''}`}
-                            placeholder="Срок аренды"
+                            placeholder="Вопрос"
                             value={duration}
                             onChange={(e) => setDuration(e.target.value)}
                             onFocus={() => handleFocus('duration')}

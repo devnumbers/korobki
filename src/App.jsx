@@ -20,7 +20,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<AppContent/>}/>
                 <Route path="/initialize" element={<Initialize/>}/>
-                <Route path="*" element={<Navigate to="/" />} />
+                <Route path="*" element={<Navigate to="/"/>}/>
             </Routes>
         </Router>
     );
@@ -45,18 +45,16 @@ function AppContent() {
 }
 
 function Initialize() {
+    const serverURL = `http://localhost:8000/form`
 
-    const baseUrl = "http://localhost:8000/form"
+    const data = ["name", "telephone", "duration", "size", "text"]
 
     useEffect(() => {
         axios
-            .post(baseUrl, {
-                title: "Hello World!",
-                body: "This is a new post about Timeweb Cloud."
-            }).then(r => {
-            console.log(r.data.message)
-            window.location.href = '/';
-        })
+            .post(serverURL, data)
+            .then(() => {
+                window.location.href = '/';
+            })
     }, []);
 
     return (
