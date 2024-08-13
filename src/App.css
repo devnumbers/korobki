@@ -1033,7 +1033,7 @@
     }
 }
 
-@media (min-width: 359px) {
+@media (min-width: 330px) {
     .container-page {
         max-width: 479px;
         width: auto;
