@@ -31,4 +31,4 @@ jobs:
             git pull
 
             docker build -t korobki-app .
-            docker run -p 3300:3000 -d --name korobki korobki-app
+            docker run -p 3300:80 -d --name korobki korobki-app
